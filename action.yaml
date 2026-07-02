@@ -64,6 +64,27 @@ inputs:
   hide-policies:
     required: false
     description: Hide policies from the output altogether
+  policy-file:
+    required: false
+    description: |
+      Path to a local .rego policy file to evaluate.
+      Use a comma separated list to evaluate several files.
+  policy-dir:
+    required: false
+    description: |
+      Path to a directory of local .rego policy files to evaluate.
+      Use a comma separated list to evaluate several directories.
+  policy-bundle:
+    required: false
+    description: |
+      OCI reference of a policy bundle to evaluate.
+      Use a comma separated list to evaluate several bundles.
+  policy-config:
+    required: false
+    description: Path to a JSON file configuring policy enablement and inputs
+  only-policy:
+    required: false
+    description: Comma separated list of policies to evaluate
 
   # filter flags
   ignore-base:
