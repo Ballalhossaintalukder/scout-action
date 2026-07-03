@@ -33984,7 +33984,7 @@ function requireSrc () {
 	}
 
 	async function main() {
-	    const version = "v1.23.0";
+	    const version = "v1.23.1";
 
 	    const binaryName = getBinaryName();
 	    const binaryPath = path.join(__dirname, "dist");
